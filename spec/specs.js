@@ -28,4 +28,9 @@ describe('calculatePrice', function() {
         var testTicket = new Ticket("Jurassic World", 17, 0, 30);
         expect(testTicket.calculatePrice()).to.equal(4);
     });
+
+    it("is $2 more after 8:00pm", function() {
+        var testTicket = new Ticket("Jurassic World", 20, 30, 24);
+        expect(testTicket.calculatePrice()).to.equal(7);
+    });
 });
