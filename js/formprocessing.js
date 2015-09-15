@@ -31,6 +31,7 @@ $(document).ready(function() {
         }
 
         $("#name-display").text(inputMovieName);
+        $("#name-display").addClass('animated infinite bounce');
 
 
         $("#ticket").show();
