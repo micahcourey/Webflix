@@ -16,7 +16,7 @@ Ticket.prototype.calculatePrice = function() {
         } else if (this.age > 65) {
             return 2;
         } else {
-            // If hours hand is before 6, apply the discount
+            // If hours hand is before 6, apply the matinee discount
             if (this.timeHours < 18) {
                 return 4;
             // Either the hours hand is past 8, or we are somewhere between 8 and 9
