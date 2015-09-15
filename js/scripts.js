@@ -1,6 +1,7 @@
-function Ticket(movieName, time, age) {
+function Ticket(movieName, timeHours, timeMinutes, age) {
     this.movieName = movieName;
-    this.time = time;
+    this.timeHours = timeHours;
+    this.timeMinutes = timeMinutes;
     this.age = age;
 };
 
@@ -10,6 +11,13 @@ Ticket.prototype.calculatePrice = function() {
     } else if (this.age > 65) {
         return 2;
     } else {
-        return 5;
+        // Calculate any discounts for adults based on ticket time
+        if (this.timeHours < 18) {
+            return 4;
+        } else {
+            return 5;
+        }
+
+
     }
 };
