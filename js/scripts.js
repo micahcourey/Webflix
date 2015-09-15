@@ -6,19 +6,25 @@ function Ticket(movieName, timeHours, timeMinutes, age) {
 };
 
 Ticket.prototype.calculatePrice = function() {
-    if (this.age < 5) {
-        return 0;
-    } else if (this.age > 65) {
-        return 2;
+    if (this.movieName === "Terminator Genisys 3D") {
+        return 80;
+
+    // All other films
     } else {
-        // Calculate any discounts for adults based on ticket time
-        if (this.timeHours < 18) {
-            return 4;
-        // Either the hours hand is past 8, or we are somewhere between 8 and 9
-    } else if ((this.timeHours > 20) || (this.timeHours === 20 && this.timeMinutes > 0)) {
-            return 7;
+        if (this.age < 5) {
+            return 0;
+        } else if (this.age > 65) {
+            return 2;
         } else {
-            return 5;
+            // If hours hand is before 6, apply the discount
+            if (this.timeHours < 18) {
+                return 4;
+            // Either the hours hand is past 8, or we are somewhere between 8 and 9
+        } else if ((this.timeHours > 20) || (this.timeHours === 20 && this.timeMinutes > 0)) {
+                return 7;
+            } else {
+                return 5;
+            }
         }
     }
 };

@@ -33,4 +33,10 @@ describe('calculatePrice', function() {
         var testTicket = new Ticket("Jurassic World", 20, 30, 24);
         expect(testTicket.calculatePrice()).to.equal(7);
     });
+
+    // Comes with an autographed T-Shirt... it's worth it.
+    it("is $80 for Terminator Genisys 3D", function() {
+        var testTicket = new Ticket("Terminator Genisys 3D", 21, 30, 40);
+        expect(testTicket.calculatePrice()).to.equal(80);
+    });
 });
