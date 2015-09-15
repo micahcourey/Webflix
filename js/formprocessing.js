@@ -21,6 +21,7 @@ $(document).ready(function() {
 
         if (inputMovieName === "Terminator Genisys 3D") {
             $("#terminator").show();
+            $("body").fadeOut("slow");
             $("body").addClass("terminator-bg").hide().fadeIn("slow");
             $("#bonus").text("Includes a complimentary t-shirt!");
         } else {
@@ -28,6 +29,8 @@ $(document).ready(function() {
             $("#terminator").hide();
             $("#bonus").empty();
         }
+
+        $("#name-display").text(inputMovieName);
 
 
         $("#ticket").show();

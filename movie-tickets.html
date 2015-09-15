@@ -11,40 +11,41 @@
     </head>
     <body>
         <div class="container">
-            <h1>Movie Ticket Generator</h1>
-            <form id="ticket-form">
-                <div class="form-group">
-                    <select class="form-control" id="movie-name">
-                        <option value="">Choose a film:</option>
-                        <option value="Jurassic World">Jurassic World</option>
-                        <option value="Batman Begins">Batman Begins</option>
-                        <option value="Terminator Genisys 3D">Terminator Genisys 3D</option>
-                        <option value="Lion King">Lion King</option>
-                        <option value="Pulp Fiction">Pulp Fiction</option>
-                        <option value="Schindler's List">Schindler's List</option>
-                        <option value="Star Wars: Episode VII">Star Wars: Episode VII</option>
-                        <option value="Fifty Shades of Grey">Fifty Shades of Grey</option>
-                        <option value="Terminator Genisys 3D">Chef's Special (leave it up to chance)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="time">Showtime:</label>
-                    <input type="time" class="form-control" id="time">
-                </div>
-                <div class="form-group">
-                    <label for="age">Your age, please:</label>
-                    <input type="number" class="form-control" id="age">
-                </div>
+            <div class="well">
+                <h1>Webflix</h1>
+                <form id="ticket-form">
+                    <div class="form-group">
+                        <select class="form-control" id="movie-name">
+                            <option value="">Choose a film:</option>
+                            <option value="Jurassic World">Jurassic World</option>
+                            <option value="Batman Begins">Batman Begins</option>
+                            <option value="Terminator Genisys 3D">Terminator Genisys 3D</option>
+                            <option value="Lion King">Lion King</option>
+                            <option value="Pulp Fiction">Pulp Fiction</option>
+                            <option value="Schindler's List">Schindler's List</option>
+                            <option value="Star Wars: Episode VII">Star Wars: Episode VII</option>
+                            <option value="Fifty Shades of Grey">Fifty Shades of Grey</option>
+                            <option value="Terminator Genisys 3D">Chef's Special (leave it up to chance)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Showtime:</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Your age, please:</label>
+                        <input type="number" class="form-control" id="age">
+                    </div>
 
-                <button type="submit" class="btn btn-primary">Calculate Price</button>
-            </form>
+                    <button type="submit" class="btn btn-primary">Calculate Price</button>
+                </form>
 
-            <div id="ticket">
-                <h2>Your ticket is <span id="price"></span>. Enjoy the film.</h2>
-                <h4 id="bonus"></h4>
-                <img src="http://i.ebayimg.com/00/s/ODAwWDgwMA==/z/0LcAAOSwNSxVWErm/$_35.JPG" id="terminator">
+                <div id="ticket">
+                    <h2>Your ticket is <span id="price"></span>. Enjoy <span id="name-display"></span>.</h2>
+                    <h4 id="bonus"></h4>
+                    <img src="http://i.ebayimg.com/00/s/ODAwWDgwMA==/z/0LcAAOSwNSxVWErm/$_35.JPG" id="terminator">
+                </div>
             </div>
-
         </div>
     </body>
 </html>
