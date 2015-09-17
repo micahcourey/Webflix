@@ -11,7 +11,7 @@ Setup
 ```console
 $ git clone https://github.com/ashlinaronin/movie-tickets.git
 ```
-* Open 'address-book.html' in a browser of your choice
+* Open 'movie-tickets.html' in a browser of your choice
 * Enjoy!
 
 Technologies Used
