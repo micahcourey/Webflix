@@ -9,7 +9,7 @@ Setup
 ----------
 * Clone repository:
 ```console
-$ git clone https://github.com/ashlinaronin/movie-tickets.git
+$ git clone https://github.com/micahcourey/Webflix.git
 ```
 * Open 'movie-tickets.html' in a browser of your choice
 * Enjoy!
