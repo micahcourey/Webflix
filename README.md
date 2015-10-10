@@ -4,6 +4,7 @@ Movie Tickets
 By Ashlin Aronin && Micah Courey, 15-Sep-2015
 
 Keep track of movie tickets using jQuery.
+Check it out at: http://micahcourey.github.io/Webflix/
 
 Setup
 ----------
